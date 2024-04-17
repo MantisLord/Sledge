@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://lxfrxk45jhsd"]
+
+[ext_resource type="Script" path="res://Script/Player.cs" id="1_tx6cd"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_6i8gu"]
+friction = 0.5
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_acgqj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_s3cn5"]
+size = Vector3(1, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0j23r"]
+size = Vector3(1, 2, 1)
+
+[node name="Player" type="RigidBody3D"]
+physics_material_override = SubResource("PhysicsMaterial_6i8gu")
+script = ExtResource("1_tx6cd")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
+current = true
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="."]
+shape = SubResource("BoxShape3D_acgqj")
+target_position = Vector3(0, -0.5, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_s3cn5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_0j23r")

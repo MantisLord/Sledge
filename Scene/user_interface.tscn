@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://6etaso1ekdg5"]
+
+[ext_resource type="Script" path="res://Script/UserInterface.cs" id="1_b0x0c"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_b0x0c")
+
+[node name="FPSLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "FPS:"
