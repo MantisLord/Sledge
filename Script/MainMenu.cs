@@ -115,13 +115,15 @@ public partial class MainMenu : Control
 		Config.SetConfig(ConfigSections.Video.ToString(), ConfigKeys.FullscreenEnabled.ToString(), value);
 	}
 
-	private static void SetScreenResolution(Vector2I value, Window win)
+	private void SetScreenResolution(Vector2I value, Window win)
 	{
 		if (value.X == 0 || value.Y == 0)
 			return;
 		win.Size = value;
 		Config.SetConfig(ConfigSections.Video.ToString(), ConfigKeys.ScreenResolution.ToString(), value);
-	}
+		var rect = DisplayServer.ScreenGetUsableRect(win.CurrentScreen);
+		win.Position = rect.Position + (rect.Size / 2 - win.Size / 2);
+    }
 
 	private void FullscreenButtonToggled(bool toggled)
 	{

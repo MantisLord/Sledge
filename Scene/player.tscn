@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Script/Player.cs" id="1_tx6cd"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_6i8gu"]
-friction = 0.5
+rough = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_acgqj"]
 
@@ -15,6 +15,7 @@ size = Vector3(1, 2, 1)
 
 [node name="Player" type="RigidBody3D"]
 physics_material_override = SubResource("PhysicsMaterial_6i8gu")
+lock_rotation = true
 script = ExtResource("1_tx6cd")
 
 [node name="Head" type="Node3D" parent="."]

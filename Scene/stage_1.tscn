@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://lxfrxk45jhsd" path="res://Scene/player.tscn" id="2_jks4r"]
 [ext_resource type="PackedScene" uid="uid://6etaso1ekdg5" path="res://Scene/user_interface.tscn" id="4_ojilh"]
 [ext_resource type="PackedScene" uid="uid://d2ugtqvrat0eo" path="res://Scene/sledge.tscn" id="5_uap88"]
-[ext_resource type="PackedScene" uid="uid://cnmfvavoh7ghm" path="res://Scene/human.tscn" id="6_g400h"]
+[ext_resource type="PackedScene" uid="uid://cnmfvavoh7ghm" path="res://Scene/human.tscn" id="7_j5tiq"]
 [ext_resource type="PackedScene" uid="uid://cpfmssrcvgcx0" path="res://Scene/human2.tscn" id="7_m65pg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_owplv"]
@@ -33,7 +33,7 @@ environment = SubResource("Environment_805sa")
 [node name="Player" parent="." instance=ExtResource("2_jks4r")]
 physics_material_override = SubResource("PhysicsMaterial_yn51k")
 
-[node name="Human" parent="." instance=ExtResource("6_g400h")]
+[node name="Human" parent="." instance=ExtResource("7_j5tiq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -62,3 +62,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40323, -0.0249997, -7.49327
 
 [node name="Human3" parent="." instance=ExtResource("7_m65pg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.95164, -0.0249999, -7.5545)
+
+[node name="Human_V4_5_Rigging" parent="." instance=ExtResource("7_j5tiq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.842608, -0.025, -6.73958)
