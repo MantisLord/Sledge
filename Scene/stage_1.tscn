@@ -35,7 +35,7 @@ environment = SubResource("Environment_805sa")
 physics_material_override = SubResource("PhysicsMaterial_yn51k")
 
 [node name="Human" parent="." instance=ExtResource("7_j5tiq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -7)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 8, 7)
@@ -59,13 +59,7 @@ mesh = SubResource("BoxMesh_k62dr")
 transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 6, 6)
 
 [node name="Human2" parent="." instance=ExtResource("7_m65pg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40323, -0.0249997, -7.49327)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.444672, -0.0249997, -7.2872)
 
-[node name="Human3" parent="." instance=ExtResource("7_m65pg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.95164, -0.0249999, -7.5545)
-
-[node name="Human_V4_5_Rigging" parent="." instance=ExtResource("7_j5tiq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.842608, -0.025, -6.73958)
-
-[node name="Human_V4_5_Rigging2" parent="." instance=ExtResource("7_ai80w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.828216, -0.0249999, -6.28653)
+[node name="Human_4_5" parent="." instance=ExtResource("7_ai80w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.17178, -0.0249999, -7.28653)
