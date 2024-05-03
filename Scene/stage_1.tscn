@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://bodjtdo11bd1i"]
+[gd_scene load_steps=14 format=3 uid="uid://bodjtdo11bd1i"]
 
 [ext_resource type="PackedScene" uid="uid://wbao3vfg15yr" path="res://Scene/arena.tscn" id="1_aux2o"]
 [ext_resource type="PackedScene" uid="uid://lxfrxk45jhsd" path="res://Scene/player.tscn" id="2_jks4r"]
 [ext_resource type="PackedScene" uid="uid://6etaso1ekdg5" path="res://Scene/user_interface.tscn" id="4_ojilh"]
 [ext_resource type="PackedScene" uid="uid://d2ugtqvrat0eo" path="res://Scene/sledge.tscn" id="5_uap88"]
+[ext_resource type="PackedScene" uid="uid://bh5dcmbbspher" path="res://Scene/human4.tscn" id="7_ai80w"]
 [ext_resource type="PackedScene" uid="uid://cnmfvavoh7ghm" path="res://Scene/human.tscn" id="7_j5tiq"]
 [ext_resource type="PackedScene" uid="uid://cpfmssrcvgcx0" path="res://Scene/human2.tscn" id="7_m65pg"]
 
@@ -65,3 +66,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.95164, -0.0249999, -7.5545
 
 [node name="Human_V4_5_Rigging" parent="." instance=ExtResource("7_j5tiq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.842608, -0.025, -6.73958)
+
+[node name="Human_V4_5_Rigging2" parent="." instance=ExtResource("7_ai80w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.828216, -0.0249999, -6.28653)

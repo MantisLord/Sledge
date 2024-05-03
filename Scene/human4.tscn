@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bh5dcmbbspher"]
+
+[ext_resource type="PackedScene" uid="uid://cfoishjedjhua" path="res://Asset/Human/Human_V4.5_Rigging.glb" id="1_jqq1w"]
+
+[node name="Human_V4_5_Rigging" instance=ExtResource("1_jqq1w")]
